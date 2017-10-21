@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Arimo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arimo Regular'), local('Arimo-Regular'), url(https://fonts.gstatic.com/s/arimo/v11/HNu4Nzh6q8Es60EMNZhs9w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v11/z6c3Zzm51I2zB_Gi7146Bg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html {
+  font-size: 18px;
+}
+
+#top-bar {
+  height: 3.55rem;
+  padding: 0 1.33rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 1.78rem;
+  display: flex;
+  align-items: center;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+#logo-title {
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+  margin-left: 0.25rem;
+}
+
+nav a {
+  margin: 0 8px;
+  font-family: Arimo, sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s linear;
+}
+
+nav a:hover {
+  color: #052E8C;
+  font-weight: bold;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+#banner {
+  padding: 1.78rem 1.33rem;
+  background-color: #CDCDCD;
+  display: flex;
+}
+
+#banner-img {
+  width: 60%;
+  height: 100%;
+  padding-right: 1.33rem;
+}
+
+#banner-description {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#banner-title {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+#banner-subtitle {
+  margin-bottom: 25px;
+  font-family: Open Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+#banner-btn button {
+  background-color: #4C3300;
+  color: white;
+  padding: 0.44rem 0;
+  width: 100%;
+  border: 0;
+  font-family: Muli, sans-serif;
+  font-size: 0.8rem;
+}
+
+#banner-btn button:hover {
+  cursor: pointer;
+  background-color: #887800;
+  transition: background-color 0.5s linear 0.2s;
+}
+
+main {
+  font-family: Open Sans, sans-serif;
+}
+
+#information {
+  display: flex;
+  background-color: #F1F0EE;
+}
+
+.info-main {
+  padding: 1.78rem 1.33rem;
+  width: 60%;
+}
+
+.info-main img {
+  width: 100%;
+}
+
+.info-main-header {
+  padding: 1.78rem 0 1.33rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.info-main-content {
+  padding-bottom: 1.78rem;
+  font-size: 0.8rem;
+}
+
+.info-main-footer {
+  font-size: 0.6rem;
+}
+
+.info-side {
+  width: 40%;
+  padding-top: 1.78rem;
+  border-left: 0.01rem solid #C6C6C6;
+}
+
+.info-element {
+  display: flex;
+  padding: 0.8rem;
+  border-top: 0.01rem solid #C6C6C6;
+  border-bottom: 0.01rem solid #C6C6C6;
+  transition: background-color 0.5s linear 0.2s;
+  align-items: center;
+}
+
+.info-element:first-child {
+  -padding-top: 0;
+}
+
+.info-element:hover {
+  background-color: #C6C6C6;
+}
+
+.info-element img {
+  width: 35%;
+  height: 100%;
+}
+
+.info-side-description {
+  width: 65%;
+  padding: 0 1rem;
+}
+
+.info-side-header {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.info-side-content {
+  margin-bottom: 0.9rem;
+  font-size: 0.7rem;
+}
+
+.info-side-link {
+  font-size: 0.7rem;
+}
+
+.info-side-link a {
+  text-decoration: none;
+}
