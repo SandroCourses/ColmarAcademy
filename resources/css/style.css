@@ -64,14 +64,18 @@ html {
   align-items: center;
 }
 
-span.bold {
-  font-weight: bold;
-}
-
 .logo-title {
   font-family: Raleway, sans-serif;
   font-size: 1rem;
   margin-left: 0.25rem;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
 }
 
 nav a {
@@ -90,6 +94,30 @@ nav a:hover {
 
 nav a:last-child {
   margin-right: 0;
+}
+
+nav img {
+  display: none;
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 635px) {
+  nav a {
+    display: none;
+  }
+
+  nav img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .logo-title {
+    display: none;
+  }
 }
 
 #banner {
@@ -141,6 +169,24 @@ nav a:last-child {
   cursor: pointer;
   background-color: #887800;
   transition: background-color 0.5s ease-out 0.2s;
+}
+
+@media only screen and (max-width: 750px) {
+  #banner {
+    padding: 0;
+    display: block;
+  }
+
+  .banner-img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .banner-description {
+    width: 100%;
+    padding: 1.78rem 0.89rem;
+    box-sizing: border-box;
+  }
 }
 
 main {
@@ -203,6 +249,10 @@ main {
   height: 100%;
 }
 
+.info-element img.mobile {
+  display: none;
+}
+
 .info-side-description {
   width: 65%;
   padding: 0 1rem;
@@ -228,6 +278,43 @@ main {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 630px) {
+  .info-main {
+    display: none;
+  }
+
+  .info-side {
+    width: 100%;
+    padding-top: 0;
+    bor
+  }
+
+  .info-element {
+    display: block;
+    border: none;
+  }
+
+  .info-element img {
+    width: 100%;
+  }
+
+  .info-element img.desktop {
+    display: none;
+  }
+
+  .info-element img.mobile {
+    display: block;
+  }
+
+  .info-side-description {
+    padding: 0;
+  }
+
+  .info-side-header {
+    margin-top: 0.5rem;
+  }
+}
+
 #courses {
   padding: 1.78rem 4rem;
   background-color: #E6E1D6;
@@ -246,9 +333,6 @@ main {
 
 .course-row {
   display: flex;
-}
-
-.course-row {
   margin-bottom: 1.78rem;
   width: 100%;
 }
@@ -266,6 +350,7 @@ main {
 
 .course:hover {
   background-color: #EEEDED;
+  cursor: pointer;
 }
 
 .course:last-child {
@@ -300,6 +385,51 @@ main {
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 730px) {
+  #courses {
+    padding: 0.89rem;
+  }
+
+  .course-row {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .course {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    background-color: #FFFDF8;
+  }
+
+  .course:hover {
+    background-color: #A1967C;
+  }
+
+  .course-row:last-child .course:last-child {
+    margin-bottom: 0;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course-description {
+    padding: 0.89rem;
+  }
+
+  .course-header {
+    margin-bottom: 1.33rem;
+  }
+
+  .course-list-header {
+    display: none;
+  }
+
+  .course-list {
+    display: none;
+  }
+}
+
 #exhibit {
   padding: 1.78rem 0 1.78rem 1.33rem;
   background-color: #F1F0EE;
@@ -318,10 +448,6 @@ main {
   width: 100%;
 }
 
-.exhibit-side {
-  width: 40%;
-}
-
 .exhibit-main-header {
   font-size: 1.2rem;
   font-weight: bold;
@@ -334,9 +460,17 @@ main {
   opacity: 0.7;
 }
 
+.exhibit-side {
+  width: 40%;
+}
+
 .exhibit-element {
   display: flex;
   transition: background-color 0.5s ease-out 0.2s;
+}
+
+.exhibit-element:hover {
+  background-color: #C6C6C6;
 }
 
 .exhibit-element img {
@@ -350,6 +484,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 0.5rem;
 }
 
 .exhibit-side-header {
@@ -363,8 +498,27 @@ main {
   opacity: 0.7;
 }
 
-.exhibit-element:hover {
-  background-color: #C6C6C6;
+@media only screen and (max-width: 730px) {
+  #exhibit {
+    padding: 0.89rem;
+  }
+
+  .exhibit-header {
+    margin-bottom: 1.33rem;
+  }
+
+  .exhibit-main {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .exhibit-main-description {
+    display: none;
+  }
+
+  .exhibit-side {
+    display: none;
+  }
 }
 
 footer {
@@ -388,4 +542,14 @@ footer a {
 footer a:hover {
   color: #052E8C;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 450px) {
+  footer {
+    justify-content: center;
+  }
+
+  .footer-links {
+    display: none;
+  }
 }
