@@ -402,10 +402,12 @@ main {
     margin-bottom: 0.5rem;
     width: 100%;
     background-color: #FFFDF8;
+    transition: background-color 0s;
   }
 
   .course:hover {
     background-color: #A1967C;
+    color: #FFFFFF;
   }
 
   .course-row:last-child .course:last-child {
